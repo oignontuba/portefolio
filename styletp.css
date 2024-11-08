@@ -5,10 +5,7 @@
     padding: 0;
 }
 
-/* Animation de fondu avec déplacement pour les sections */
 
-
-/* Animation de fondu uniquement, sans déplacement */
 @keyframes fadeInNoMove {
     0% {
         opacity: 0;
@@ -18,11 +15,6 @@
     }
 }
 
-
-/* Appliquer l'animation avec déplacement aux sections principales */
-
-
-/* Appliquer l'animation sans déplacement à #contact et footer */
 #contact, footer, #projects,header {
     animation: fadeInNoMove 10s ease-out;
     opacity: 1;
@@ -109,19 +101,7 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 {
     color: #0073e6;
 }
-.custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20px; /* Largeur du curseur */
-    height: 20px; /* Hauteur du curseur */
-    border-radius: 50%;
-    background-color: rgba(0, 115, 230, 0.5); /* Couleur du curseur (effet halo) */
-    pointer-events: none; /* Évite que le curseur bloque les clics */
-    transition: transform 0.1s ease; /* Lissage des mouvements */
-    transform: translate(-50%, -50%);
-    z-index: 1000; /* Au-dessus des autres éléments */
-}
+
 
 
 
