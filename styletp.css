@@ -1,0 +1,179 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation de fondu avec déplacement pour les sections */
+
+
+/* Animation de fondu uniquement, sans déplacement */
+@keyframes fadeInNoMove {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Appliquer l'animation avec déplacement aux sections principales */
+
+
+/* Appliquer l'animation sans déplacement à #contact et footer */
+#contact, footer, #projects,header {
+    animation: fadeInNoMove 10s ease-out;
+    opacity: 1;
+}
+
+/* État initial avant l'animation */
+header, #projects, #contact, footer {
+    opacity: 1;
+}
+
+
+body
+{
+    font-family: Arial,sans-serif;
+line-height: 1.6;
+color: black;
+
+}
+header
+{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+        120deg ,rgba(00,73,255 ,0.3) ,rgba(0,0,0,0.2)
+    );
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a 
+{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight:bold;
+
+}
+header nav a:hover
+{
+    text-decoration:underline;
+
+}
+
+#projects
+{
+  padding: 2rem;
+    text-align: center;
+}
+
+.project-list
+{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project
+{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(
+        120deg ,rgba(00,73,255 ,0.3) ,rgba(0,0,0,0.2)
+    );
+
+border-radius:5px ;
+padding : 1rem;
+margin: 1rem;
+width:300px;
+text-align: left ;
+border: 1px solid rgba(255, 255, 255, 0.18);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.project:hover
+{
+    transform: perspective(1000px) translateZ(20px) scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    animation: 2s;
+}
+.projects h3
+{
+    color: #0073e6;
+}
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px; /* Largeur du curseur */
+    height: 20px; /* Hauteur du curseur */
+    border-radius: 50%;
+    background-color: rgba(0, 115, 230, 0.5); /* Couleur du curseur (effet halo) */
+    pointer-events: none; /* Évite que le curseur bloque les clics */
+    transition: transform 0.1s ease; /* Lissage des mouvements */
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Au-dessus des autres éléments */
+}
+
+
+
+
+.btn
+{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top:1rem ;
+    color:white;
+    background-color: #0073e6 ;
+    border-radius:5px;
+    text-decoration: none;
+}
+.btn:hover
+{
+    background-color: #005bb5;
+}
+
+
+footer
+{
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(
+        120deg ,rgba(00,73,255 ,0.3) ,rgba(0,0,0,0.2)
+    );
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+#v1
+{
+    object-fit: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+
+
+
+
+
