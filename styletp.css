@@ -45,7 +45,7 @@ header
     text-align: center;
 }
 
-header nav a 
+ a 
 {
     color: white;
     margin: 0 10px;
@@ -101,7 +101,6 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 {
     color: #0073e6;
 }
-
 
 
 
